@@ -1,0 +1,163 @@
+.steps {
+    height: 46px;
+    border-bottom: 2px solid #E6E6E6;
+    position: relative;
+    margin-top: 20px;
+
+}
+.steps ol {
+    margin-top: 20px;
+    width: 720px;
+    /*margin: 100px auto;*/
+}
+.steps ol li {
+    float: left;
+    line-height: 46px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #999;
+    font-family: "Î¢ÈíÑÅºÚ","»ªÎÄÏ¸ºÚ","ºÚÌå",arial;
+    padding: 0 20px;
+}
+.steps i {
+    display: inline-block;
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFF;
+    background-color: #999999;
+    border-radius: 50%;
+}
+.steps .active {
+    border-bottom: 2px solid #FF4700;
+}
+.steps .active i {
+    background-color: #C80511;
+}
+.steps .active span {
+    color: #3E3E3E;
+}
+.content {
+    padding: 50px 0;
+    margin-bottom: 100px;
+}
+.content .form {
+    width: 720px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+.form-up span {
+    float: left;
+    display: block;
+    width: 160px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #CCC;
+}
+.content .area {
+    border-right: none;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    position: relative;
+}
+.content .area s {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    overflow: hidden;
+    width: 15px;
+    height: 15px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+.content .area s i {
+    position: absolute;
+    top: -16px;
+    right: 0px;
+    width: 15px;
+    height: 15px;
+}
+.content .first,.content .last {
+    border: none;
+}
+.content .first {
+    text-align: right;
+    padding-right: 10px;
+    font-size: 14px;
+}
+.form-second {
+    margin: 20px 0;
+    position: relative;
+}
+
+.form-second span {
+    float: left;
+    display: block;
+    /*width: 160px;*/
+    padding-left: 125px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    padding-right: 20px;
+
+
+}
+.form-second .slider {
+    float: left;
+    width: 300px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #E8E8E8;
+    position: relative;
+    color: #9C9C9C;
+}
+.form-second .slidermask {
+    width: 0;
+    height: 35px;
+    background-color: #2ee84b;
+    position: absolute;
+    top: 0;
+    left: 174px;
+}
+.form-second .slider s {
+    width: 40px;
+    height: 32px;
+    border: 1px solid #CCC;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    cursor: move;
+    background-color: #fff;
+}
+.form-down {
+    margin: 10px 0;
+    padding-left: 170px;
+}
+.form-down .next {
+    display: inline-block;
+    background-color: #EDEDED;
+    color: #d333ff;
+    width: 180px;
+    height: 36px;
+    font-size: 14px;
+    line-height: 36px;
+    text-align: center;
+    font-weight: bold;
+}
+.form-down .read {
+    height: 36px;
+    height: 36px;
+    margin: 10px 0;
+    line-height: 36px;
+}

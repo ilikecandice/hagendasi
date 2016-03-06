@@ -1,0 +1,158 @@
+.tmall-loadin-top a {
+    display: inline-block;
+    padding-top: 28px;
+    padding-left: 2px;
+    width: 280px;
+    height: 64px;
+}
+.loadin-content {
+    width: 990px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.loadin-content .pic {
+    background: url(../images/loadin.jpg) no-repeat right;
+    width: 528px;
+    height: 276px;
+    float: left;
+    display: inline;
+
+}
+.loadin-content .form {
+    display: inline;
+    float: left;
+    width: 310px;
+    height: 319px;
+    margin-left: 50px;
+}
+.loadin-content .formmall {
+    background: url(../images/mall.png) no-repeat 50% top;
+    height: 20px;
+}
+.loadin-content .form-box {
+    border: 1px solid #CCC;
+    height: 300px;
+    background-color:#fafafa;
+    position: relative;
+}
+.box-top span {
+    display: block;
+    float: left;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid #DEDEDE;
+    width: 50%;
+    padding-bottom: 12px;
+    padding-top: 15px;
+    cursor: pointer;
+}
+.box-bd {
+    margin: 1px;
+    margin: 25px 26px 20px;
+    width: 250px;
+    height: 224px;
+    position: relative;
+    position: absolute;
+    top: 36px;
+    left: 0;
+}
+.box-bd2 {
+    display: none;
+}
+
+.box-bd label {
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    color: #666;
+    text-align: center;
+    background: #CCC none repeat scroll 0% 0%;
+    font-size: 20px;
+}
+.box-bd .label-one {
+    position: absolute;
+    left: 1px;
+    top: 21px;
+}
+.box-bd .label-two {
+    position: absolute;
+    left: 1px;
+    top: 78px;
+}
+.box-bd span {
+    position: absolute;
+    line-height: 37px;
+    height: 37px;
+    color: #999;
+    left: 45px;
+    top: 20px;
+}
+.box-bd input {
+    width: 203px;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 45px;
+    vertical-align: middle;
+    border: 1px solid #DEDEDE;
+    margin-top: 20px;
+}
+.forgetwd {
+    margin: 20px 5px 0 5px;
+}
+.forgetwd .a-one {
+    float: left;
+}
+.forgetwd .a-two {
+    float: right;
+}
+.box-bd button {
+    width: 254px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #C80511;
+    margin-top: 20px;
+    border-radius: 10%;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+.box-bd1 s {
+    position: absolute;
+    top: 55px;
+    left: 125px;
+    display: inline-block;
+    padding: 5px 20px;
+    line-height: 10px;
+}
+.fastload {
+    text-align: center ;
+    margin-top: 30px;
+}
+.fastload h1 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    margin-top: 20px;
+}
+.fastload p {
+    text-align: center;
+    padding-bottom: 10px;
+    display: block;
+}
+.form-box .box-top .current {
+    border-bottom: 2px solid #C81623;
+    color: #3E3E3E;
+}
+.box-bd1 .wrong {
+    color: #C81623;
+
+}
+.box-bd1 .right {
+    color: #1dc831;
+
+}

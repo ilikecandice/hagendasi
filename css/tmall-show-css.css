@@ -1,0 +1,100 @@
+body {
+    height: 2000px;
+}
+.bar-mask {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 999999;
+    width: 35px;
+    height: 100%;
+    background-color: #000;
+    display: none;
+}
+/*.bar-mask  {*/
+/*position: absolute;*/
+/*top: 0;*/
+/*right: 0;*/
+/*color: #C80511;*/
+/*}*/
+.bar-mask ul {
+    padding-top: 115px;
+}
+.bar-mask ul li {
+    padding-bottom: 10px;
+    text-align: center;
+    position: relative;
+
+}
+.bar-mask .shopcar a {
+    /*border-top: 1px solid #9C9C9C;*/
+    /*border-bottom: 1px solid #9C9C9C;*/
+}
+.bar-mask .shopcar e {
+    display: inline-block;
+    height: 65px;
+    width: 20px;
+    color: #fff;
+}
+.bar-mask .wechat {
+    margin-top: 100px;
+}
+.bar-mask .aliww {
+    position: absolute;
+    top: 50%;
+    right: 35px;
+}
+.bar-mask .kefu, .bar-mask .totop {
+    display: inline-block;
+    width: 51px;
+    height: 57px;
+    background: url(../images/kefu.gif) no-repeat -51px -57px;
+    border: 1px solid #CCCCCC;
+    opacity: 0.85;
+}
+.bar-mask .kefu {
+    background: url(../images/kefu.gif) no-repeat -51px -57px;
+}
+.bar-mask .totop {
+    background: url(../images/4.png) no-repeat -51px -57px;
+    margin-top: -6px;
+    display: none;
+}
+.bar-mask .mask-ul span {
+    /*display: none;*/
+    opacity: 0;
+    position: absolute;
+    left: -110px;
+    top: -1px;
+    width: 90px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFF;
+    background-color: #494949;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.bar-mask .mask-ul span i {
+    color: #494949;
+    position: absolute;
+    top: 5%;
+    right:-7px;
+}
+.mask-ul .wechat .erweima {
+    position: absolute;
+    top: -120px;
+    right: 35px;
+    display: none;
+}
+.mask-ul .wechat .erweima i {
+    color: #fff;
+    position: absolute;
+    top: 60%;
+    right: -6px;
+
+}
+
+.current {
+    background-color: #C81623;
+}

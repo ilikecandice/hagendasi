@@ -1,0 +1,342 @@
+@charset "UTF-8";
+/*<!--//淘宝的NAV-->*/
+.wc-nav-top {
+    width: auto;
+    border-bottom: 1px solid #E5E5E5;
+    background-color: #F2F2F2;
+}
+.wc-nav-topw {
+    width: 1190px;
+    height: 26px;
+    line-height: 26px;
+    margin: 0 auto;
+}
+
+.wc-nav-top-l {
+    width: 400px;
+    height: 26px;
+    /*background-color: pink;*/
+    float: left;
+}
+.wc-nav-top-l ul {
+    width: 500px;
+    height: 26px;
+}
+.wc-nav-top-l li {
+    float: left;
+    margin-right: 30px;
+}
+.wc-nav-top-r{
+    width: 650px;
+    height: 26px;
+    float: right;
+    /*background-color: pink;*/
+}
+.wc-nav-top-r ul li {
+    float: left;
+    padding:0 10px;
+    /*background-color: pink;*/
+    /*margin-left: 5px;*/
+}
+.wc-nav-top-r .wc-nav-top-li-gery {
+    width: 1px;
+    height: 18px;
+    margin: 4px 0;
+    padding: 0;
+    background-color:#E5E5E5;
+}
+.wc-nav-top-r-myTB {
+    position: relative;
+}
+/*隐藏的我的淘宝的小盒子*/
+.wc-nav-top-r-myTB-SS {
+    position: absolute;
+    top: 26px;
+    left: 0;
+    width: 75px;
+    padding:  5px;
+    background-color: #fff;
+    border: 1px solid #F2F2F2;
+    display: none;
+    z-index: 10;
+}
+.wc-nav-top-r-myTB-SSl {
+    float: right;
+    width: 60px;
+}
+.wc-nav-top-r-myTB-SS11 {
+    border-bottom:  1px dashed #F2F2F2;
+}
+.wc-nav-top-r-myTB .wc-nav-top-r-myTB-SSshop {
+    position: absolute;
+    width: 130px;
+    top: 26px;
+    left: -73px;
+}
+.wc-nav-top-r-myTB-pone {
+    position: relative;
+}
+.wc-top-r-Web {
+    width: 1081px;
+    height: 198px;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    right:0;
+    z-index: 10;
+    border:1px solid #E5E5E5;
+    padding: 27px 52px 25px 47px;
+    display: none;
+}
+.wc-top-r-Web-line{
+    display: inline-block;
+    width: 1px;
+    height: 198px;
+    float: left;
+    margin-right:30px ;
+    background-color:  #E5E5E5;
+}
+.wc-top-r-Web dl {
+    width: 85px;
+    float: left;
+}
+.wc-top-r-Web dt {
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+    color:darkred;
+    font-weight: bold;
+}
+.wc-top-r-Web1 dt {
+    color : #F56A00
+}
+.wc-top-r-Web2 dt {
+    color : #2263D4
+}
+.wc-top-r-Web3 dt {
+    color : #000000
+}
+.wc-top-r-Web4 dt {
+    color : #666666
+}
+.wc-top-r-Web4 {
+    margin-right: 20px;
+    float: right;
+}
+.wc-top-r-Web-po {
+    position: relative;
+}
+.wc-top-r-Web i {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    top: 0;
+    left: 50px;
+    background-image: url("../images/wc-HOT.bmp");
+}
+.wc-top-r-Web e {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    top: 0;
+    left: 25px;
+    background-image: url("../images/wc-NEW.bmp");
+}
+.wc-nav-serch-phoneEE {
+    position: absolute;
+    top : 120%;
+    left: -50%;
+    background-color: #fff;
+    padding-bottom: 20px;
+    border: 1px solid #E5E5E5;
+    display: none;
+    text-align: center;
+    z-index: 10;
+}
+.wc-nav-serch {
+    width: auto;
+    height: 85px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.wc-nav-serch-limggg{
+    /*height: 200px;*/
+    cursor: pointer;
+}
+.wc-nav-serchw {
+    width: 1190px;
+    /*height: 46px;*/
+    padding: 15px 0 24px 0;
+    /*background-color: yellow;*/
+    margin: 0 auto;
+}
+.wc-nav-serch-l {
+    float: left;
+}
+.wc-nav-serch-l ul {
+    width: 481px;
+    height: auto;
+}
+.wc-nav-serch-l li {
+    margin-right: 10px;
+    /*height: 41px;*/
+    padding: 0 10px;
+    float: left;
+    border-right :1px solid #F0F0F0;
+}
+.wc-nav-serch-l .wc-nav-serch-limg {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.wc-nav-serch-span {
+    float: left;
+}
+.wc-nav-serch-l .wc-span{
+    border-right: 1px dashed #F0F0F0;
+    margin-right: 8px;
+    padding-right: 8px;
+}
+.wc-nav-serch-span i{
+    color:#C40000;
+    font-weight: bold;
+}
+/*//在中间搜寻的小盒子*/
+.wc-nav-serch-TBSS {
+    position: relative;
+}
+.wc-nav-serch-phoneE {
+    position: absolute;
+    top : 100%;
+    left: -50%;
+    background-color: #fff;
+    display: none;
+    border: 1px solid #E5E5E5;
+}
+.wc-nav-serch-spanSC {
+    position: relative;
+}
+.wc-nav-serch-spanSC-bt1 {
+    position: absolute;
+    bottom: 10.5%;
+    left: 34%;
+}
+.wc-nav-serch-r {
+    float: right;
+}
+.wc-nav-serch-TBSS i{
+    display: block;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.wc-nav-serch-rr{
+    position: relative;
+}
+.wc-nav-serch-spanSC {
+    position: absolute;
+    top:100%;
+    left: -100%;
+    border: 1px solid #E5E5E5;
+    display: none;
+}
+.wc-txt {
+    padding: 10px  5px;
+}
+.wc-nav-serch-rr label {
+    position: absolute;
+    top:25%;
+    left: 10px;
+}
+.wc-nav-serch-r input{
+    width: 354px;
+    height: 12px;
+    border: 2px solid #C40000;
+    float: left;
+}
+.wc-button1 {
+    float: left;
+    margin-right: 5px;
+    background-color: #C40000;
+}
+.wc-nav-serch-r button{
+    cursor: pointer;
+    width: 80px;
+    height: 36px;
+    color: #fff;
+    font-size: 18px;
+}
+.wc-button2 {
+    background-color: #333333;
+}
+
+
+/*<!--//淘宝的foot-->*/
+.wc-fotT {
+    width: 1190px;
+    margin: 0 auto;
+}
+.wc-fotTT {
+    height: 51px;/*165-64-50*/
+    padding: 64px 69px 50px 52px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.wc-fotTT ul {
+    margin: 0 auto;
+}
+.wc-fotTT li {
+    float: left;
+    margin-left: 28px;
+    cursor: pointer;
+}
+.wc-fotTF {
+    height: 158px;
+    padding: 29px 86px 25px 50px;
+}
+.wc-fotTF ul {
+    float: left;
+    width: 230px;
+}
+.wc-fotTF .wc-fotFT-DM {
+    width: auto;
+    float: right;
+}
+.wc-fotTF-fst {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+
+.wc-fotF {
+    width: auto;
+    border-top: 2px solid #C40000;
+    background-color: #000000;
+}
+.wc-fotFF {
+    width: 1190px;
+    height: 137px;
+    margin: 0 auto;
+    padding:  12px 0 44px 0 ;
+}
+.wc-fotFFt ul {
+    /*margin-bottom: 20px;*/
+}
+.wc-fotFF li {
+    float: left;
+    margin-right: 10px;
+}
+.wc-fotFFt{
+    /*margin-top:10px;*/
+    position: relative;
+    margin-bottom: 20px;
+}
+.wc-fotFFt a {
+    color : #fff;
+}
+.wc-fotFFt-mao {
+    position: absolute;
+    top:-37px;
+    left: 50px;
+
+}
+

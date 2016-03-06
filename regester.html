@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/regester.css"/>
+
+    <style>
+
+    </style>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+        $(function(){
+            $(".slider s")[0].onmousedown = function(){
+                $(".slider s").on("mousemove",function(event){
+                    var event = event||window.event;
+                    pagex = event.pageX;
+                    pagey = event.pageY;
+                    $(".slider s").offsetLeft = pagex;
+
+                });
+            }
+
+        });
+    </script>
+</head>
+<body>
+<!--tmall-regester-start-->
+
+<div class="steps w">
+    <ol>
+        <li class="active"><i>1</i><span class="tsl">设置用户名</span></li>
+        <li><i>2</i><span class="tsl">填写账号信息</span></li>
+        <li><i>3</i><span class="tsl" >设置支付方式</span></li>
+        <li><i class="iconfont">√</i><span class="tsl">注册成功</span></li>
+    </ol>
+</div>
+<div class="content w">
+    <div class="form">
+        <div class="form-up clearfix">
+           <span class="first">手机号</span>
+            <span class="area">
+                <s><i>◇</i></s>
+
+                <ul>
+                    <li>中国大陆    +86  </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </span>
+            <span>请输入你的手机号</span>
+            <span class="last"></span>
+        </div>
+        <div class="form-second clearfix">
+            <span>验证</span>
+            <div class="slider">
+                <s>>></s>
+                请按住滑块拖动到右边
+            </div>
+            <div class="slidermask">
+
+            </div>
+        </div>
+        <div class="form-down">
+            <div class="next">下一步</div>
+            <div class="read">
+                <a href="#" class="col-red">需要通过邮箱注册</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--tmall-regester-end-->
+<!--tmall-loadin-top-start-->
+<!--tmall-loadin-top-end-->
+<!--tmall-loadin-top-start-->
+<!--tmall-loadin-top-end-->
+
+</body>
+</html>
+<script></script>

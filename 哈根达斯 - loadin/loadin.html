@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/index.css"/><!--JD模板-->
+    <link rel="stylesheet" href="css/base.css"/><!--自己样式-->
+    <link rel="stylesheet" href="css/loadin.css"/>
+    <style>
+        @font-face {font-family: 'jinglingtu';
+            src: url('font/iconfont.eot'); /* IE9*/
+            src: url('font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('font/iconfont.woff') format('woff'), /* chrome、firefox */
+            url('font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+            url('font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+        }
+        .wc-top-font{
+            font-family:"jinglingtu" !important;
+            font-size:14px;font-style:normal;
+            margin-right: 2px;
+            color :#C40000;
+        }
+
+    </style>
+    <script src="jquery-1.11.1.min.js"></script>
+    <script>
+        $(function(){
+            $(".wc-nav-top-r-myTB").hover(function(){
+                $(this).css("background-color","#fff").children("span").show();
+            },function(){
+                $(this).css("background-color","#F2F2F2").children("span").hide();
+            });
+            $(".wc-nav-serch-TBSS").hover(function(){
+                $(this).children(".wc-nav-serch-phoneE").show();
+            },function(){
+                $(this).children(".wc-nav-serch-phoneE").hide();
+            });
+            $(".wc-nav-top-r-myTB-pone").hover(function(){
+                $(this).children(".wc-nav-serch-phoneEE").show();
+            },function(){
+                $(this).children(".wc-nav-serch-phoneEE").hide();
+            });
+            $(".wc-nav-serch-span").hover(function(){
+                $(this).children(".wc-nav-serch-spanSC").show();
+            },function(){
+                $(this).children(".wc-nav-serch-spanSC").hide();
+            });
+            $(".wc-txt").focus(function(){
+                if($(this).val() ===""){//这个判断有问题不能执行else
+                $(this).next("label").css("color","#E5E5E5");
+                }else{
+                    $(this).next("label").text("");
+                }
+            });
+            $(".wc-txt").blur(function(){
+                if($(this).val() ===""){//这个判断有问题不能执行else
+                    $(this).next("label").text("魅力惠入驻！时尚轻奢首选");
+                    $(this).next("label").css("color","#000");
+                }else{
+//                    $(this).next("label").css("color","#000");
+                    $(this).next("label").text("");
+                }
+            });
+
+            $(".wc-txt").keydown(function(){
+                $(this).next("label").text("");
+            })
+        })
+    </script>
+    <script>
+        $(function(){
+            $(".box-top").on("click",".fastloadin",function(){
+                $(".box-bd2").show();
+                $(this).addClass("current").siblings().removeClass("current");
+                $(".box-bd1").hide();
+
+            });
+            $(".box-top").on("click",".passwordload",function(){
+                $(".box-bd2").hide();
+                $(".box-bd1").show();
+                $(this).addClass("current").siblings().removeClass("current");
+            });
+            $("#e-input")[0].onfocus = function(){
+                $(".box-bd1 span").hide();
+            };
+            $("#e-input")[0].onblur = function(){
+                if($("#e-input")[0].value == ""){
+                    $(".box-bd1 span").show();
+                }
+                else{
+                    var reg =  $("#e-input")[0].value;
+//                    alert(reg);
+                    var regexp = /^((13[0-9])|(15[^4,\D])|(18[0,5-9]))\d{8}$/;
+//                    alert(regexp.test(reg));
+                    if(regexp.test(reg)==false){
+                        $(".box-bd1").find("#e-input").next("s").html("输入内容不合法");
+                        $(".box-bd1").find("#e-input").next("s").addClass("wrong");
+                    }
+                    else {
+                        $(".box-bd1").find("#e-input").next("s").html("输入正确");
+                        $(".box-bd1").find("#e-input").next("s").addClass("right");
+                    }
+
+                }
+            }
+
+        });
+    </script>
+</head>
+<body>
+<!--//淘宝的NAV-->
+    <div class = "wc-nav">
+            <div class = "wc-nav-top">
+                <div class = "wc-nav-topw">
+                    <div class = "wc-nav-top-l">
+                        <ul class = "wc-nav-top-ul">
+                            <li><i class="wc-top-font">&#xe60d;</i><a href="#">天猫首页</a></li>
+                            <li>喵，欢迎来天猫</li>
+                            <li><a href="#">请登录</a></li>
+                            <li><a href="#">免费注册</a></li>
+                        </ul>
+                    </div>
+                    <div class = "wc-nav-top-r">
+                        <ul>
+                            <li class = "wc-nav-top-r-myTB">
+                                <a href="#">我的淘宝</a>
+                                <span class = "wc-nav-top-r-myTB-SS">
+                                      <a href="#">已买到的宝贝</a><br/>
+                                      <a href="#">已卖出的宝贝</a>
+                                </span>
+                            </li>
+                            <li><i class="wc-top-font">&#x3459;</i><a href="#">我关心的品牌</a></li>
+                            <li><i class="wc-top-font">&#x3501;</i><a href="#">购物车0件</a></li>
+                            <li class = "wc-nav-top-r-myTB">
+                                <i class="wc-top-font">&#x3503;</i>
+                                <a href="#">收藏夹</a>
+                                <span class = "wc-nav-top-r-myTB-SS">
+                                      <a href="#">收藏到的宝贝</a><br/>
+                                      <a href="#">收藏的店铺</a>
+                                </span>
+                                <em></em>
+                            </li>
+                            <li class= "wc-nav-top-li-gery"></li>
+                            <li class = "wc-nav-top-r-myTB-pone">
+                                <i class="wc-top-font">&#x345e;</i>
+                                <a href="#">手机版</a>
+                                <span class = "wc-nav-serch-phoneEE">
+                                    <img src="images/wc-doTransit.png" alt=""/><br/>
+                                    <img src="images/wc-TB1sl.png" alt=""/>
+                                </span>
+                            </li>
+                            <li><a href="#">淘宝网</a></li>
+                            <li class = "wc-nav-top-r-myTB">
+                                <a href="#">商家支持</a>
+                                <span class = "wc-nav-top-r-myTB-SS  wc-nav-top-r-myTB-SSshop">
+                                     <span>商家：<br/>
+                                         <span class = "wc-nav-top-r-myTB-SSl">
+                                              <a href="#">商家中心</a><br/>
+                                              <a href="#">商家入驻</a><br/>
+                                              <a href="#">运营服务</a><br/>
+                                              <a href="#">商家品控</a><br/>
+                                         </span>
+                                          <span class = "wc-nav-top-r-myTB-SSl">
+                                              <a href="#">商家工具</a><br/>
+                                              <a href="#">商家规则</a><br/>
+                                              <a href="#">天猫智库</a><br/>
+                                              <a href="#">喵言喵语</a><br/>
+                                          </span>
+                                     </span>
+                                    <br/>
+                                    <span>帮助：<br/>
+                                            <a href="#">帮助中心</a>
+                                    </span>
+                                </span>
+                            </li>
+                            <li class="wc-nav-top-r-myTB">
+                                <i class="wc-top-font">&#x344e;</i>
+                                <a href="#">网站导航</a>
+                                <span class="wc-top-r-Web">
+                                   <span class="wc-top-r-Web1">
+                                       <dl class = "clearfix">
+                                           <dt><a href="#">热点推荐</a></dt>
+                                           <dd class = "wc-top-r-Web-po"><a href="#">天猫超市</a><i></i></dd>
+                                           <dd><a href="#">玩酷街</a></dd>
+                                           <dd><a href="#">时尚先生</a></dd>
+                                           <dd class = "wc-top-r-Web-po"><a href="#">会员积分</a><i></i></dd>
+                                       </dl>
+                                       <dl class = "clearfix">
+                                           <dt>&nbsp;</dt>
+                                           <dd><a href="#">喵先生</a></dd>
+                                           <dd><a href="#">内衣新品</a></dd>
+                                           <dd class = "wc-top-r-Web-po"><a href="#">精品妈咪</a><i></i></dd>
+                                           <dd><a href="#">天猫国际</a></dd>
+                                       </dl>
+                                       <dl class = "clearfix">
+                                           <dt>&nbsp;</dt>
+                                           <dd class = "wc-top-r-Web-po"><a href="#">科技新品</a><i></i></dd>
+                                           <dd><a href="#">试验化</a></dd>
+                                           <dd><a href="#">吃乐会</a></dd>
+                                       </dl>
+                                       <dl class = "clearfix">
+                                           <dt>&nbsp;</dt>
+                                           <dd><a href="#">女装新品</a></dd>
+                                           <dd><a href="#">运动新品</a></dd>
+                                           <dd class = "wc-top-r-Web-po"><a href="#">企业采购</a><i></i></dd>
+                                       </dl>
+                                   </span>
+                                    <span class = "wc-top-r-Web-line"></span>
+                                     <span class="wc-top-r-Web2">
+                                       <dl class = "clearfix">
+                                           <dt>行业市场</dt>
+                                           <dd class = "wc-top-r-Web-po"><a href="#">美妆</a><e></e></dd>
+                                           <dd class = "wc-top-r-Web-po"><a href="#">女鞋</a><e></e></dd>
+                                           <dd><a href="#">运动</a></dd>
+                                           <dd class = "wc-top-r-Web-po"><a href="#">食品</a><e></e></dd>
+                                       </dl>
+                                       <dl class = "clearfix">
+                                           <dt>&nbsp;</dt>
+                                           <dd><a href="#">电器</a></dd>
+                                           <dd><a href="#">男鞋</a></dd>
+                                           <dd><a href="#">女婴</a></dd>
+                                           <dd class = "wc-top-r-Web-po"><a href="#">配饰</a><e></e></dd>
+                                       </dl>
+                                       <dl class = "clearfix">
+                                           <dt>&nbsp;</dt>
+                                           <dd><a href="#">女装</a></dd>
+                                           <dd class = "wc-top-r-Web-po"><a href="#">内衣</a><e></e></dd>
+                                           <dd><a href="#">家装</a></dd>
+                                           <dd class = "wc-top-r-Web-po"><a href="#">汽车</a><e></e></dd>
+                                       </dl>
+                                       <dl class = "clearfix">
+                                           <dt>&nbsp;</dt>
+                                           <dd><a href="#">男装</a></dd>
+                                           <dd class = "wc-top-r-Web-po"><a href="#">箱包</a><e></e></dd>
+                                           <dd><a href="#">医药</a></dd>
+                                       </dl>
+                                   </span>
+                                      <span class = "wc-top-r-Web-line"></span>
+                                     <span class="wc-top-r-Web3">
+                                       <dl class = "clearfix">
+                                           <dt><a href="#">品牌风尚</a></dt>
+                                           <dd><a href="#">尚天猫</a></dd>
+                                           <dd class = "wc-top-r-Web-po"><a href="#">潮牌街道</a><i></i></dd>
+                                           <dd><a href="#">什么牌子好</a></dd>
+                                       </dl>
+                                       <dl class = "clearfix">
+                                           <dt>&nbsp;</dt>
+                                           <dd><a href="#">大牌街</a></dd>
+                                           <dd class = "wc-top-r-Web-po"><a href="#">天猫原创</a><i></i></dd>
+                                       </dl>
+                                   </span>
+                                      <span class = "wc-top-r-Web-line"></span>
+                                     <span class="wc-top-r-Web4">
+                                       <dl class = "clearfix">
+                                           <dt>服务指南</dt>
+                                           <dd class = "wc-top-r-Web-po"><a href="#">帮助中心</a><i></i></dd>
+                                           <dd class = "wc-top-r-Web-po"><a href="#">品质保障</a><i></i></dd>
+                                           <dd class = "wc-top-r-Web-po"><a href="#">特色服务</a><i></i></dd>
+                                           <dd><a href="#">7天退换货</a></dd>
+                                       </dl>
+                                   </span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class = "wc-nav-serch">
+                <div class = "wc-nav-serchw">
+                    <div class = "wc-nav-serch-l">
+                        <ul>
+                            <li class="wc-nav-serch-limg"><img src="images/wc-srech-log.png" alt=""/></li>
+                            <li class="wc-nav-serch-limggg">
+                                <span class="wc-nav-serch-span wc-span"><a href="#">哈根达斯旗舰店</a><br/><img src="images/wc-srech-line.GIF" alt=""/></span>
+                                <span class="wc-nav-serch-span wc-nav-serch-rr">
+                                    <span>描 述 服 务 物 流</span><br/>
+                                    <i> 4.8 - </i><i> 4.8 - </i><i> 4.8 ↑</i>
+                                    <span class="wc-nav-serch-spanSC">
+                                        <img src="images/wc-shouc.bmp" alt=""/>
+                                    </span>
+                                </span>
+                            </li>
+                            <li class = "wc-nav-serch-TBSS">手机逛<br/><span><img src="images/wc-srech-erweima.png" alt=""/></span>
+                                <span class = "wc-nav-serch-phoneE"><img src="images/wc-doTransit.png" alt=""/><br/>
+                                    <i>扫一扫，手机逛起来</i>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class = "wc-nav-serch-r ">
+                        <div class = "wc-nav-serch-rr">
+                            <input type="text" class = "wc-txt" id="wc_text"/>
+                            <label for="wc_text">魅力惠入驻！时尚轻奢首选</label>
+                            <button class = "wc-button1">搜天猫</button>
+                            <button class = "wc-button2">搜本站</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+<!--tmall-loadin-top-start-->
+<div class="w tmall-loadin-top">
+    <!--<a href="www.tmall.com">-->
+        <!--<s><img src="images/Tmall-logo.png" alt=""/></s>-->
+    <!--</a>-->
+</div>
+<div class="loadin-content clearfix">
+    <div class="pic"></div>
+    <div class="form">
+        <div class="formmall"></div>
+        <div class="form-box">
+            <div class="box-top clearfix">
+                <span class="fastloadin">快速登录</span>
+                <span class="passwordload">账户密码登录</span>
+            </div>
+            <!--用户名密码登录页面-->
+            <div class="box-bd box-bd1">
+                <span>手机号/会员名/邮箱</span>
+                <label for="e-input" class="label-one"><i>♟</i></label><input id="e-input" type="text"/><s></s>
+                <label for="wd-input" class = "label-two"><i>♚</i></label><input id="wd-input" type="password"/><s></s>
+                <div class="forgetwd">
+                    <a href="#" class="a-one">忘记密码？</a>
+                    <a href="#" class="a-two">免费注册</a>
+                </div>
+                <button>登  录</button>
+            </div>
+            <!--快速登录页面-->
+            <div class="box-bd box-bd2">
+                <div class="fastload">
+                    <img src="images/index.png" alt=""/>
+                    <h1>手机扫码  安全登录</h1>
+                    <p>使用<a href="" class="col-red">手机淘宝</a>、<a href="" class="col-red">阿里钱盾</a>扫描二维码</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--//淘宝的foot-->
+<!--//淘宝的foot-->
+    <div class = "wc-foot">
+        <div class = "wc-fotT">
+            <div class = "wc-fotTT">
+                <ul>
+                    <li><img src="images/wc-icon1.png" alt=""/></li>
+                    <li><img src="images/wc-icon2.png" alt=""/></li>
+                    <li><img src="images/wc-icon3.png" alt=""/></li>
+                    <li><img src="images/wc-icon4.png" alt=""/></li>
+                </ul>
+            </div>
+            <div class = "wc-fotTF">
+                <ul>
+                    <li class = "wc-fotTF-fst">购物指南</li>
+                    <li><a href="#">免费注册</a></li>
+                    <li><a href="#">开通支付宝</a></li>
+                    <li><a href="#">支付宝充值</a></li>
+                </ul>
+                <ul>
+                    <li class = "wc-fotTF-fst">天猫保障</li>
+                    <li><a href="#">发票保障</a></li>
+                    <li><a href="#">售后规则</a></li>
+                    <li><a href="#">缺货赔付</a></li>
+                </ul>
+                <ul>
+                    <li class = "wc-fotTF-fst">支付方式</li>
+                    <li><a href="#">快捷支付</a></li>
+                    <li><a href="#">信用卡</a></li>
+                    <li><a href="#">余额宝</a></li>
+                    <li><a href="#">蚂蚁花呗</a></li>
+                    <li><a href="#">货到付款</a></li>
+                </ul>
+                <ul>
+                    <li class = "wc-fotTF-fst">商家服务</li>
+                    <li><a href="#">商家入驻</a></li>
+                    <li><a href="#">商家中心</a></li>
+                    <li><a href="#">天猫智库</a></li>
+                    <li><a href="#">天猫规则</a></li>
+                    <li><a href="#">物流服务</a></li>
+                    <li><a href="#">喵言喵语</a></li>
+                    <li><a href="#">运营服务</a></li>
+                </ul>
+                <ul class= "wc-fotFT-DM">
+                    <li class = "wc-fotTF-fst">手机大猫</li>
+                    <li><a href="#"><img src="images/wc-erweimamam.png" alt=""/></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class = "wc-fotF">
+            <div class = "wc-fotFF">
+                <div class = "wc-fotFFt">
+                    <span class = "wc-fotFFt-mao"><img src="images/wc-footF-mao.png" alt=""/></span>
+                    <ul>
+                        <li><a href="">关于天猫</a></li>
+                        <li><a href="">帮助中心</a></li>
+                        <li><a href="">开放平台</a></li>
+                        <li><a href="">诚聘英才</a></li>
+                        <li><a href="">联系我们</a></li>
+                        <li><a href="">网站合作</a></li>
+                        <li><a href="">法律声明</a></li>
+                        <li><a href="">廉正举报</a></li>
+                    </ul>
+                    <br/><br/>
+                    <span><a href="#">阿里巴巴集团</a> | <a href="#">淘宝网</a>  |  <a href="#">天猫</a> | <a href="#">聚划算</a>  | <a href="#">全球速卖通</a>  |  <a href="#">阿里巴巴国际交易市场</a> |  <a href="#">1688</a>  |  <a href="#">阿里妈妈</a> | <a href="#">阿里旅行·去啊</a> | <a href="#">阿里云计算</a> | <a href="#">YunOS</a> | <a href="#">阿里通信</a> | <a href="#">万网</a> | <a href="#">高德</a>  | <a href="#">优视</a>  |  <a href="#">友盟</a>  |  <a href="#">虾米</a>  |  <a href="#">天天动听</a>  |  <a href="#">来往</a>  |  <a href="#">钉钉</a >  |  <a href="#">支付宝</a></span>
+                </div>
+                <span>增值电信业务经营许可证：浙B2-20110446网络文化经营许可证：浙网文[2015]0295-065号互联网医疗保健信息服务 审核同意书 浙卫网审【2014】6号
+互联网药品信息服务资质证书编号：浙-（经营性）-2012-0005</span><br/>
+                <span>互联网药品信息服务资质证书编号：浙-（经营性）-2012-0005</span><br/>
+                <span>&copy; 2003-2015 TMALL.COM 版权所有</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
